@@ -1,4 +1,4 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -7,6 +7,74 @@
   </head>
 
   <body>
-    
+    <div id="content-container">
+      <h1>Steffen Samseth</h1>
+      <div class="card">
+        <h2>Welcome</h2>
+        <div class="spacer"></div>
+        <p>
+          I am a prospetive front-end developer based in Norway currently
+          studying at Noroff.
+        </p>
+        <p>
+          My goal is to write neat, semantic and DRY code to create fast,
+          responsive and intuitive websites that I can hand ofoff with pride!
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Get in touch</h2>
+        <div class="spacer"></div>
+        <p>
+          I'm reachable at
+          <a href="mailto:steffen221191@gmail.com">Steffen221191@gmail.com</a>
+          or you can use the form below.
+        </p>
+        <form class="contact-form">
+          <div class="form-container">
+            <label class="form-label" for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="form-container">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form-container">
+            <label class="form-label">Phone number</label>
+            <input
+              type="tel"
+              name="phone-number"
+              id="phone-number"
+              placeholder="Optional"
+            />
+          </div>
+          <div class="form-container">
+            <label class="form-label">Orginization</label>
+            <input
+              type="text"
+              name="orginization"
+              id="orginizaoion"
+              placeholder="Optional"
+            />
+          </div>
+          <div class="form-container">
+            <label class="form-label">Your message</label>
+            <textarea type="text" name="message-box" id="message-box">
+Write your message here</textarea
+            >
+          </div>
+          <input type="submit" value="send" required />
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Portfolio</h2>
+        <div class="spacer"></div>
+        <div class="portfolio-card">
+          <img src="" />
+          <div class="portfolio-text"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
