@@ -4,75 +4,134 @@
     <meta charset="UTF-8" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="screen.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <div id="content-container">
+    <div class="background-element">
       <h1>Steffen Samseth</h1>
-      <div class="card">
-        <h2>Welcome</h2>
-        <div class="spacer"></div>
-        <p>
-          I am a prospetive front-end developer based in Norway currently
-          studying at Noroff.
-        </p>
-        <p>
-          My goal is to write neat, semantic and DRY code to create fast,
-          responsive and intuitive websites that I can hand ofoff with pride!
-        </p>
-      </div>
+      <div id="content-container">
+        <div class="card">
+          <h2>Welcome</h2>
+          <div class="spacer"></div>
+          <p>
+            I am a prospetive front-end developer based in Norway currently
+            studying at Noroff.
+          </p>
+          <p>
+            My goal is to write neat, semantic and DRY code to create fast,
+            responsive and intuitive websites that I can hand off with pride!
+          </p>
+        </div>
 
-      <div class="card">
-        <h2>Get in touch</h2>
-        <div class="spacer"></div>
-        <p>
-          I'm reachable at
-          <a href="mailto:steffen221191@gmail.com">Steffen221191@gmail.com</a>
-          or you can use the form below.
-        </p>
-        <form class="contact-form">
-          <div class="form-container">
-            <label class="form-label" for="name">Name</label>
-            <input type="text" name="name" id="name" required />
-          </div>
-          <div class="form-container">
-            <label class="form-label" for="email">Email</label>
-            <input type="email" name="email" id="email" required />
-          </div>
-          <div class="form-container">
-            <label class="form-label">Phone number</label>
-            <input
-              type="tel"
-              name="phone-number"
-              id="phone-number"
-              placeholder="Optional"
-            />
-          </div>
-          <div class="form-container">
-            <label class="form-label">Orginization</label>
-            <input
-              type="text"
-              name="orginization"
-              id="orginizaoion"
-              placeholder="Optional"
-            />
-          </div>
-          <div class="form-container">
-            <label class="form-label">Your message</label>
-            <textarea type="text" name="message-box" id="message-box">
-Write your message here</textarea
+        <div class="card">
+          <h2>Get in touch</h2>
+          <div class="spacer"></div>
+          <p>
+            I'm reachable at
+            <a class="email-text" href="mailto:steffen221191@gmail.com"
+              >steffen221191@gmail.com</a
             >
-          </div>
-          <input type="submit" value="send" required />
-        </form>
-      </div>
+            or you can use the form below.
+          </p>
+          <form class="contact-form">
+            <div class="form-container">
+              <label class="form-label" for="name">Name</label>
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+            </div>
+            <div class="form-container">
+              <label class="form-label" for="email">Email</label>
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+            <div class="form-container">
+              <label class="form-label">Phone number</label>
+              <input
+                class="form-input"
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                placeholder="Optional"
+              />
+            </div>
+            <div class="form-container">
+              <label class="form-label">Orginization</label>
+              <input
+                class="form-input"
+                type="text"
+                name="orginization"
+                id="orginizaoion"
+                placeholder="Optional"
+              />
+            </div>
+            <div class="form-container">
+              <label class="form-label">Your message</label>
+              <textarea
+                type="text"
+                name="message-box"
+                id="message-box"
+                placeholder="Write your message here"
+              ></textarea>
+            </div>
+            <input
+              class="form-input-button"
+              type="submit"
+              value="send"
+              required
+            />
+          </form>
+        </div>
 
-      <div class="card">
-        <h2>Portfolio</h2>
-        <div class="spacer"></div>
-        <div class="portfolio-card">
-          <img src="" />
-          <div class="portfolio-text"></div>
+        <div class="card">
+          <h2>Portfolio</h2>
+          <div class="spacer"></div>
+          <p>Here are some of the sites I've worked on.</p>
+          <div id="portfolio-card-container">
+            <div class="portfolio-card">
+              <img src="/img/placeholder.png" />
+              <div class="portfolio-text">
+                <h3>Game Hub</h3>
+                <p>Languages: HTML, CSS.</p>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <img src="/img/placeholder.png" />
+              <div class="portfolio-text">
+                <h3>Game Hub</h3>
+                <p>Languages: HTML, CSS.</p>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <img src="/img/placeholder.png" />
+              <div class="portfolio-text">
+                <h3>Game Hub</h3>
+                <p>Languages: HTML, CSS.</p>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <img src="/img/placeholder.png" />
+              <div class="portfolio-text">
+                <h3>Game Hub</h3>
+                <p>Languages: HTML, CSS.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

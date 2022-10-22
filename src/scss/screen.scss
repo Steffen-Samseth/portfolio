@@ -1,3 +1,180 @@
 body {
-background-color: black;
+  background-image: url(/img/portfolio-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: Cairo, sans-serif;
+}
+
+.background-element {
+  height: 100%;
+  width: 100%;
+  padding: 0px 0px 75px 0px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.1) 65%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  h1 {
+    margin: 75px;
+    font-family: "MedievalSharp", cursive;
+    text-align: center;
+    color: #f4f4f4;
+    font-size: 50px;
+    user-select: none;
+  }
+
+  #content-container {
+    max-width: 922px;
+    margin: 0px auto;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin-top: 75px;
+      padding: 60px 130px;
+
+      h2 {
+        margin: 0px;
+        font-size: 42px;
+        color: #46595d9c;
+      }
+
+      p {
+        margin: 20px auto;
+        color: #46595d;
+      }
+
+      .email-text {
+        color: #1d798f;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .spacer {
+        display: block;
+        width: 80%;
+        height: 1px;
+        margin: 25px auto;
+        opacity: 0.5;
+        background-image: linear-gradient(
+          270deg,
+          transparent,
+          rgba(0, 0, 0, 0.8) 20%,
+          #000 50%,
+          rgba(0, 0, 0, 0.8) 80%,
+          transparent
+        );
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+        .form-container {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          margin-bottom: 30px;
+
+          .form-label {
+            align-self: start;
+            color: #46595d;
+          }
+
+          .form-input,
+          #message-box {
+            border-radius: 3px;
+            border-width: 1px;
+            border-color: #46595d4f;
+            color: #1d798f;
+
+            &:focus, &:hover {
+              box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+              outline: none;
+            }
+          }
+
+          .form-input {
+            padding: 0px 10px;
+            height: 40px;
+          }
+
+          #message-box {
+            min-height: 200px;
+            padding: 10px;
+            resize: vertical;
+          }
+        }
+
+        .form-input-button {
+          color: white;
+          font-weight: bold;
+          font-size: 14px;
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+          background-color: #1d798f;
+          border-color: #46595d;
+          border-style: solid;
+          padding: 20px 80px;
+          border-radius: 3px;
+          border-width: 1px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #1d798fd4;
+          }
+        }
+      }
+
+      #portfolio-card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 20px 0px;
+        justify-content: space-around;
+
+        .portfolio-card {
+          display: flex;
+          flex-direction: column;
+          width: calc(50% - 30px);
+          margin: 15px;
+          transition: 0.2s;
+          filter: brightness(80%);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.05);
+            filter: brightness(100%);
+          }
+
+          .portfolio-text {
+            background-color: white;
+            padding-bottom: 20px;
+
+            h3 {
+              font-size: 14px;
+              color: #46595d;
+              margin: 10px 0px 0px 0px;
+            }
+
+            p {
+              color: #46595d9c;
+              margin: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
