@@ -1,13 +1,16 @@
 body {
-  background-image: url(/img/portfolio-image.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   margin: 0;
   font-family: Cairo, sans-serif;
 }
 
-.background-element {
+#background {
+  background-image: url(img/portfolio-image.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.background-gradient {
   height: 100%;
   width: 100%;
   padding: 0px 0px 75px 0px;
@@ -19,7 +22,8 @@ body {
   );
 
   h1 {
-    margin: 75px;
+    margin: 0px;
+    padding: 75px 0px;
     font-family: "MedievalSharp", cursive;
     text-align: center;
     color: #f4f4f4;
@@ -38,6 +42,10 @@ body {
       background-color: #f4f4f4;
       margin-top: 75px;
       padding: 60px 130px;
+
+      @media (max-width: 900px) {
+        padding: 60px 75px;
+      }
 
       h2 {
         margin: 0px;
@@ -99,7 +107,8 @@ body {
             border-color: #46595d4f;
             color: #1d798f;
 
-            &:focus, &:hover {
+            &:focus,
+            &:hover {
               box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
               outline: none;
             }
@@ -143,34 +152,55 @@ body {
         margin: 20px 0px;
         justify-content: space-around;
 
-        .portfolio-card {
+        @media (max-width: 900px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .card-link {
+          text-decoration: none;
+          width: calc(50% - 30px);
           display: flex;
           flex-direction: column;
-          width: calc(50% - 30px);
           margin: 15px;
           transition: 0.2s;
           filter: brightness(80%);
           box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
           cursor: pointer;
 
+          @media (max-width: 900px) {
+            width: initial;
+            max-width: 500px;
+            margin-bottom: 75px;
+          }
+
           &:hover {
             transform: scale(1.05);
             filter: brightness(100%);
+
+            & p {
+              color: #46595d !important;
+            }
+          }
+
+          img {
+            width: 100%;
           }
 
           .portfolio-text {
+            flex-grow: 1;
             background-color: white;
             padding-bottom: 20px;
 
             h3 {
-              font-size: 14px;
+              font-size: 14.5px;
               color: #46595d;
-              margin: 10px 0px 0px 0px;
+              margin-top: 10px;
             }
 
             p {
               color: #46595d9c;
-              margin: 0px;
+              margin: 0px 20px;
             }
           }
         }
